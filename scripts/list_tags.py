@@ -30,7 +30,7 @@ for tag in filtered_tags:
     count = tag_counts[tag]
     items.append({
         "title": tag,
-        "subtitle": f"{count} file{'s' if count != 1 else ''} • ↵ view • ⌘ remove • ⌥ rename • ⌃ tag",
+        "subtitle": f"{count} file{'s' if count != 1 else ''} • ↵ view • ⌘ remove • ⌥ rename • ⌃ tag • ⇧ view all",
         "arg": tag,
         "mods": {
             "cmd": {
