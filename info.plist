@@ -453,7 +453,9 @@ fi</string>
 				<integer>102</integer>
 				<key>script</key>
 				<string>cd "$alfred_workflow_directory"
-python3 scripts/reassign_tag_to_file.py "{query}"</string>
+python3 scripts/reassign_tag_to_file.py "{query}"
+
+osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in workflow "com.toddsgotapen.finderfiletags"'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1038,7 +1040,9 @@ tag="${input##*||}"
 				<integer>102</integer>
 				<key>script</key>
 				<string>cd "$alfred_workflow_directory"
-python3 scripts/rename_tag.py "{query}"</string>
+python3 scripts/rename_tag.py "{query}"
+
+osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in workflow "com.toddsgotapen.finderfiletags"'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1364,7 +1368,7 @@ if os.path.exists(default_tags_path):
 		<key>1D5FAEBB-DCDB-4E64-8101-4E228FB9B184</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>8</integer>
 			<key>xpos</key>
 			<real>580</real>
 			<key>ypos</key>
@@ -1373,7 +1377,7 @@ if os.path.exists(default_tags_path):
 		<key>201ABA9D-14F1-4F30-A5F6-7D0686F7B4CD</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>3</integer>
+			<integer>2</integer>
 			<key>xpos</key>
 			<real>80</real>
 			<key>ypos</key>
@@ -1393,7 +1397,7 @@ if os.path.exists(default_tags_path):
 		<key>2BC268CF-6179-4FAE-934F-BCC9C494955C</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>3</integer>
+			<integer>2</integer>
 			<key>note</key>
 			<string>delete tag</string>
 			<key>xpos</key>
@@ -1413,7 +1417,7 @@ if os.path.exists(default_tags_path):
 		<key>479056E0-A9EB-4E78-BA94-DFA83F84247F</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>8</integer>
 			<key>note</key>
 			<string>invoke init or reset</string>
 			<key>xpos</key>
@@ -1493,7 +1497,7 @@ if os.path.exists(default_tags_path):
 		<key>74AFEA7D-68BB-490B-87A6-B6CC5149B57A</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>2</integer>
 			<key>note</key>
 			<string>rename tag</string>
 			<key>xpos</key>
@@ -1636,7 +1640,7 @@ if os.path.exists(default_tags_path):
 		<key>F2ED7431-7B64-406B-AF44-097162A9359B</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>2</integer>
 			<key>note</key>
 			<string>reassign tag to file</string>
 			<key>xpos</key>
