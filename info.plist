@@ -88,7 +88,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>7173BE84-EFE0-4714-8412-BBB7E73C2F51</string>
+				<string>69864A41-A156-480A-BB65-2B8C4598F42A</string>
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
@@ -155,19 +155,6 @@
 		</array>
 		<key>5B60DE0B-F9B9-4EE4-80C7-3FDD63D777D1</key>
 		<array/>
-		<key>7173BE84-EFE0-4714-8412-BBB7E73C2F51</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>69864A41-A156-480A-BB65-2B8C4598F42A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>89C58200-A9EF-411F-82BA-ADE45424EAEF</key>
 		<array>
 			<dict>
@@ -319,16 +306,6 @@
 				<string>90ED9396-39BC-4794-A4EA-FFCB886E2BF9</string>
 				<key>modifiers</key>
 				<integer>262144</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>7173BE84-EFE0-4714-8412-BBB7E73C2F51</string>
-				<key>modifiers</key>
-				<integer>524288</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -660,30 +637,6 @@ python3 scripts/open_file_and_remove_tag.py "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key></key>
-					<string></string>
-					<key>path</key>
-					<string>{query}</string>
-					<key>tag</key>
-					<string>{var:tag}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>7173BE84-EFE0-4714-8412-BBB7E73C2F51</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -797,9 +750,9 @@ python3 scripts/list_tags.py "{query}"
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Show bookmarks grouped by tag</string>
+				<string>Show tagged files grouped by tag</string>
 				<key>title</key>
-				<string>Show bookmarked pages</string>
+				<string>Show tagged files</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -1045,7 +998,7 @@ python3 scripts/list_files_for_search.py "{query}"
 				<key>keyword</key>
 				<string>fts</string>
 				<key>subtext</key>
-				<string>Search by file name or path. Type % to show all mails</string>
+				<string>Search by file name, path or tag. Type % to show all mails</string>
 				<key>text</key>
 				<string>Search tagged files</string>
 				<key>withspace</key>
@@ -1390,13 +1343,6 @@ if os.path.exists(default_tags_path):
 			<real>490</real>
 			<key>ypos</key>
 			<real>235</real>
-		</dict>
-		<key>7173BE84-EFE0-4714-8412-BBB7E73C2F51</key>
-		<dict>
-			<key>xpos</key>
-			<real>755</real>
-			<key>ypos</key>
-			<real>365</real>
 		</dict>
 		<key>73F23002-615E-4F63-8BF0-0B571B64C9EA</key>
 		<dict>
