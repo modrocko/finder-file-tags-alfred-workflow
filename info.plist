@@ -1061,7 +1061,7 @@ osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in 
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>keyword</key>
 				<string>fts</string>
 				<key>subtext</key>
@@ -1069,7 +1069,7 @@ osascript -e 'tell application "Alfred 5" to run trigger "refresh_tags_list" in 
 				<key>text</key>
 				<string>Search tagged files</string>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
