@@ -18,7 +18,7 @@ for entry in files:
     tag = entry.get("tag", "")
     for path in entry.get("paths", []):
         name = os.path.basename(path.rstrip("/"))
-        if query == "%" or query == "" or query in os.path.basename(path).lower() or query in path.lower() or query in tag.lower():
+        if query in os.path.basename(path).lower() or query in path.lower() or query in tag.lower():
             results.append({
                 "title": name,
                 "subtitle": f"[{tag}] • {path}",
