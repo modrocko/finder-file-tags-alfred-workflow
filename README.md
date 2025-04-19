@@ -15,7 +15,7 @@ A complete tagging system:  [Apple MailTags](https://github.com/modrocko/apple-m
 ✘  Too much time to see all tagged files in a single view  
 ✘  Too confusing to organize tags quickly & simply
 
-### What doesn't...
+### What rocks...
 
 ✓  Tag any or many files however you want — instantly  
 ✓  Organize, find & open any or many files — instantly  
