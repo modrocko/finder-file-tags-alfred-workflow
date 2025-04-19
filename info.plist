@@ -1323,103 +1323,22 @@ if os.path.exists(default_tags_path):
 	<key>readme</key>
 	<string># Finder File Tags
 
-Tag mails with a label since this does not exist in Apple Mail
-
-▸  Requires [jq](https://formulae.brew.sh/formula/jq)
-
-
-## Overview
-A complete tagging system:  [Apple MailTags](https://github.com/modrocko/apple-mail-tags-alfred-workflow) | [Browser Bookmark Tags](https://github.com/modrocko/browser-bookmark-tags-alfred-workflow) | **Finder File Tags**
-
-### What sucks...
-
-✘  Can't (easily) tag files using Apple Finder, and...  
-✘  Too many steps to tag files  
-✘  Too much time to see all tagged files in a single view  
-✘  Too confusing to organize tags quickly &amp; simply
-
-### What doesn't...
+A simple system for tagging, finding and managing tags for Apple Finder files
 
 ✓  Tag any or many files however you want — instantly  
 ✓  Organize, find &amp; open any or many files — instantly  
 ✓  Specify default tags or type your own — instantly  
 ✓  Keep your Finder file sanity — always
 
-## Usage
 
-Here're the main functions for Finder File Taags using Alfred
+* `:ft init` — Intialize workflow before using
+* `ft` — View top level functions
+* `fta` — Assign a tag to currently selected Finder files
+* `ftl` — List all files grouped by tag
+* `fts` — Search through all tagged files
+* `:ft edit` — Edit data files (if needed) and open underlying folders
 
-*💡 **Tip**: Type '!' to mark &amp; save tags as '❗' (high priority)*  
-
-### Initialize workflow
-
-❗Type `:ft init` to run this operation to start using this workflow
-
-![](assets/ft-init.png)     
-
-&lt;kbd&gt;↵&lt;/kbd&gt; Initialize the workflow
-
-&lt;kbd&gt;⌘&lt;/kbd&gt; &lt;kbd&gt;↵&lt;/kbd&gt; Reset data files *(will delete current data files)* 
-
-### Show all Mail Tag options
-
-Type `ft` to view top level functions
-
-![](assets/ft.png )  
-
-### Assign a tag
-
-Type `fta` to view all tags *(defaults or previously specified tags)*
-
-Select or type a new label to tag currently highlighted files in Apple Finder
-
-![](assets/fta.png) 
-
-&lt;kbd&gt;↵&lt;/kbd&gt; Tag selected email(s)
-
-### List tagged files
-
-Type `ftl` to view a list of all items grouped by tag
-
-![image-20250418151731547](assets/ftl.png) 
-
-&lt;kbd&gt;↵&lt;/kbd&gt;  View all files for selected tag
-
-&lt;kbd&gt;⌘&lt;/kbd&gt; &lt;kbd&gt;↵&lt;/kbd&gt; Remove selected tag from all tagged files
-
-&lt;kbd&gt;⌥&lt;/kbd&gt; &lt;kbd&gt;↵&lt;/kbd&gt; Rename selected tag for all files
-
-&lt;kbd&gt;⌃&lt;/kbd&gt; &lt;kbd&gt;↵&lt;/kbd&gt; Tag currently highlighted files for selected tag
-
-&lt;kbd&gt;⇧&lt;/kbd&gt; &lt;kbd&gt;↵&lt;/kbd&gt; Open all files for the selected tag
-
-### Search tagged emails
-
-Type `fts` to search through all tagged emails
-
-![image-20250418151831159](assets/fts.png) 
-
-&lt;kbd&gt;↵&lt;/kbd&gt;  View email for selected item
-
-&lt;kbd&gt;⌘&lt;/kbd&gt; &lt;kbd&gt;↵&lt;/kbd&gt; Remove tag from selected file
-
-&lt;kbd&gt;⌥&lt;/kbd&gt; &lt;kbd&gt;↵&lt;/kbd&gt; Open the file and remove tag afterwards
-
-&lt;kbd&gt;⌃&lt;/kbd&gt; &lt;kbd&gt;↵&lt;/kbd&gt; Reassign tag for selected file
-
-### Apple Mail Tag utilities
-
-Type `:ft edit` to edit data files (if needed) and open underlying folders
-
-![image-20250418152153843](assets/ft-edit.png) 
-
-&lt;kbd&gt;↵&lt;/kbd&gt;  Open email file for manual edits via TextEdit.app
-
-&lt;kbd&gt;⌘&lt;/kbd&gt; &lt;kbd&gt;↵&lt;/kbd&gt; Open default tags file for manual edit via TextEdit.app
-
-&lt;kbd&gt;⌥&lt;/kbd&gt; &lt;kbd&gt;↵&lt;/kbd&gt; Open the data folder for this workflow
-
-&lt;kbd&gt;⌃&lt;/kbd&gt; &lt;kbd&gt;↵&lt;/kbd&gt; Open the workflow folder for this workflow</string>
+[See documentation](https://github.com/modrocko/finder-file-tags-alfred-workflow)</string>
 	<key>uidata</key>
 	<dict>
 		<key>087E5667-B25A-4069-91FE-131D1C254EF2</key>
@@ -1734,7 +1653,7 @@ Type `:ft edit` to edit data files (if needed) and open underlying folders
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>3.2.1</string>
+	<string>3.2.2</string>
 	<key>webaddress</key>
 	<string>toddsgotapen.com</string>
 </dict>
